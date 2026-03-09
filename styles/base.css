@@ -1,0 +1,28 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background-color: #f5f5f5;
+    color: #333;
+    
+}
+
+header {
+    background-color: #1e4164;
+    color: #fff;
+    padding: 20pc 0;
+    text-align: center;
+
+} 
+
+#course-title {
+    display: block;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
