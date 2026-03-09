@@ -1,28 +1,139 @@
+:root {
+    --primary-blue: #1e4d6b;
+    --dark-grey: #333333;
+    --light-grey: #f4f4f4;
+    --border-color: #cccccc;
+    --footer-bg: #1e4d6b;
+    --footer-text: #ffffff;
+    --last-mod-color: #ffff00;
+}
+
 * {
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Outfit', 'Roboto', sans-serif;
     line-height: 1.6;
-    background-color: #f5f5f5;
     color: #333;
-    
+    background-color: #fff;
 }
 
 header {
-    background-color: #1e4164;
-    color: #fff;
-    padding: 20pc 0;
+    background-color: var(--primary-blue);
+    color: white;
     text-align: center;
+}
 
-} 
+.header-title {
+    padding: 15px 0;
+}
 
 #course-title {
-    display: block;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.8rem;
-    margin-bottom: 15px;
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+nav {
+    background-color: var(--dark-grey);
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 5px 15px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #555;
+    text-decoration: underline;
+}
+
+main {
+    max-width: 1100px;
+    margin: 20px auto;
+    padding: 0 20px;
+    /* Layout de colunas para os cartões */
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    align-items: start;
+}
+
+h1 {
+    grid-column: 1 / -1; /* Ocupa as duas colunas */
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 20px 0;
+    font-weight: 400;
+}
+
+.card {
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+.card h2 {
+    background-color: var(--primary-blue);
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+/* Posicionamento da imagem e texto dentro do cartão */
+.card img {
+    width: 150px;
+    height: auto;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+}
+
+.card p {
+    padding: 0 20px 20px 20px;
+    text-align: center;
+}
+
+/* Ajuste específico para o primeiro cartão (About Me) para alinhar imagem e texto lado a lado se desejar */
+/* Como o HTML é simples, usamos flex no conteúdo do cartão se necessário, mas mantendo a estrutura */
+
+footer {
+    background-color: var(--footer-bg);
+    color: var(--footer-text);
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+#lastModified {
+    color: var(--last-mod-color);
+    font-size: 0.9rem;
+}
+
+/* Responsividade */
+@media (max-width: 850px) {
+    main {
+        grid-template-columns: 1fr;
+    }
+    
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
 }
