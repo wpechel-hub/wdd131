@@ -19,7 +19,7 @@ header {
 }
 
 nav {
-    background-color: #3a3a8f;
+    background-color: black;
     padding: 1rem;
     display: flex;
     flex-direction: column;
