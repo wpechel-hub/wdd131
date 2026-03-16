@@ -1,0 +1,121 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Sansita", sans-serif;
+    line-height: 2;
+    color: #333;
+    background-color: #fff;
+}
+
+header {
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 30px #333;
+}
+
+nav {
+    background-color: navy;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav h1 {
+    color: white;
+    font-size: 1.6rem;
+}
+
+#menu {
+    font-size: 2rem;
+    border: 0;
+    background: none;
+    color: white;
+    cursor: pointer;
+}
+
+nav ul {
+    list-style: none;
+    display: none;
+    flex-direction: column;
+}
+
+nav ul.open {
+    display: flex;
+}
+
+nav ul li {
+    text-align: center;
+}
+
+nav a {
+    display: block;
+    padding: .8rem;
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: white;
+    color: navy;
+}
+
+main {
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 1rem;
+}
+
+main h1 {
+    font-size: 2rem;
+    border-bottom: 1px solid #777;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 25px;
+}
+
+.temples {
+    font-weight: 700;
+    border-bottom: 1px solid #777;
+    margin-bottom: 1rem;
+}
+
+figure {
+    text-align: center;
+}
+
+figure img {
+    width: 100%;
+    height: auto;
+}
+
+figcaption {
+    font-size: smaller;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+#lastModified {
+    color: yellow;
+    font-size: 0.9rem;
+}

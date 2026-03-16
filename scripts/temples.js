@@ -1,3 +1,12 @@
+const menuButton = document.querySelector("#menu");
+const navigation = document.querySelector("nav ul");
+
+menuButton.addEventListener("click", () => {
+    navigation.classList.toggle("open");
+});
+
+
+
 const currentYearElement = document.getElementById("currentyear");
 if (currentYearElement) {
     currentYearElement.textContent = new Date().getFullYear();
