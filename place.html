@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Place - Willian Pechel</title>
+    <meta name="description" content="This is the page where it will show a place, some information such as some date and weather. Using HTML, CSS Grid, and JavaScript.">
+    <meta name="author" content="Willian Pechel">
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+     </head>
+<body>
+    <header>
+        <h1>Paraná</h1>
+    </header>
+
+         <main>
+            <div class="hero">
+                <img src="images/iguacu_falls.heic" alt="Jardim Botanico">
+            </div>
+
+            <section class="data">
+                <h2>Data</h2>
+                <div class="data-content">
+                    
+                      <p><strong>Area:</strong> 199,281.7 km²</p>
+                      <p></p><strong>Population:</strong> 11,433,957</p>
+                      <p></p><strong>Capital:</strong> Curitiba</p>
+                      <p></p><strong>Language:</strong> Portuguese</p>
+                      <p></p><strong>Currency:</strong> Real (BRL)</p>
+                      <p></p><strong>Time Zone:</strong> UTC -3</p>
+                      <p></p><strong>Calling Code:</strong> +55</p>
+                      <p></p><strong>Internet TLD:</strong> .br</p>
+                    
+                </div>
+            </section>
+
+                <section class="weather">
+                    <h2>Weather</h2>
+                    <div class="weather-content">
+                        <img src="images/weather_icon.png" alt="Weather Icon" class="mobile-icon" width="100">
+                        <ul>
+                            <p><strong>Temperature:</strong> <span id="temp">22</span>°C</p>
+                            <p><strong>Conditions:</strong> Partly Cloudy</p>
+                            <p><strong>Wind:</strong> <span id="wind">12</span> km/h</p>
+                            <p><strong>Wind Chill:</strong> <span id="windchill">N/A</span></p>
+                        </ul>
+                    </div>
+                </section>
+        </main>
+
+        <footer>
+        <p>&copy; <span id="currentyear"></span> Willian Pechel - Eagle Mountain UT</p>
+         <p id="lastModified"></p>
+        
+        </footer>
+
+
+   
+    
+</body>
+</html>
