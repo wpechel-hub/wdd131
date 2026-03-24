@@ -20,7 +20,19 @@
 
          <main>
             <div class="hero">
-                <img src="images/iguacu_falls.heic" alt="Jardim Botanico">
+                <picture>
+                    <source
+                        media="(max-width: 899px)"
+                        srcset="images/cataracatas_ig.webp">
+
+                    <source
+                        media="(min-width: 1200px)"
+                        srcset="images/cataratas_iguacu.webp">
+
+                    <img 
+                        src="images/cataratas_iguacu.webp" 
+                        alt="Cataratas do Iguaçu">
+                </picture>
             </div>
 
             <section class="data">
