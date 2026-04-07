@@ -1,0 +1,175 @@
+:root {
+  --primary: #3b0034;
+  --form-bg: #d8d1d8;
+  --text: #222222;
+  --white: #ffffff;
+  --border: #b9b1b9;
+  --optional: #2a42c7;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  background: var(--white);
+  color: var(--text);
+}
+
+header,
+footer {
+  max-width: 760px;
+  margin: 0 auto;
+  background: var(--primary);
+  color: var(--white);
+  text-align: center;
+}
+
+header {
+  padding: 0.9rem 1rem;
+  margin-top: 0.15rem;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+main {
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.review-form {
+  background: var(--form-bg);
+  padding: 1rem;
+  margin: 0.7rem 0;
+}
+
+.form-group,
+fieldset {
+  border: none;
+  padding: 0;
+  margin: 0 0 1.4rem 0;
+}
+
+label,
+legend {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 0.45rem;
+  display: block;
+}
+
+.hint {
+  font-style: italic;
+  font-weight: 400;
+}
+
+.optional {
+  color: var(--optional);
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+select,
+input[type="date"],
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 0.8rem;
+  font: inherit;
+  border: 1px solid var(--border);
+  background: var(--white);
+}
+
+textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.rating-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 0.5rem;
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+.rating-option label {
+  display: block;
+  font-size: 1.1rem;
+  font-weight: 400;
+  margin-bottom: 0.35rem;
+}
+
+.rating-option input[type="radio"] {
+  width: 20px;
+  height: 20px;
+  accent-color: var(--primary);
+}
+
+.checkbox-group {
+  display: grid;
+  gap: 0.45rem;
+}
+
+.checkbox-group label {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  font-weight: 400;
+  margin: 0;
+}
+
+.checkbox-group input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  accent-color: var(--primary);
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 0.9rem;
+  font-size: 1.05rem;
+  font-weight: 700;
+  background: #efefef;
+  border: 1px solid #999;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background: #e3e3e3;
+}
+
+footer {
+  padding: 0.9rem 1rem;
+}
+
+footer p {
+  margin: 0.3rem 0;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: 2px solid var(--primary);
+  outline-offset: 1px;
+}
+
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 1.8rem;
+  }
+
+  .review-form {
+    padding: 0.9rem;
+  }
+
+  .rating-option label {
+    font-size: 1rem;
+  }
+}
