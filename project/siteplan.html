@@ -1,317 +1,296 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131 - Oraganize it with Dani - Willian Pechel</title>
-    <meta name="description" content="Temple Album: WDD 131 course, This is the final project.">
-    <meta name="author" content="Willian Pechel">
-    <link rel="stylesheet" href="/project/styles/siteplan.css">
-    <link rel="stylesheet" href="styles/temples-large.css">
-    <script src="scripts/filtered-temples.js" defer></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Organize It With Dani</title>
+  <meta
+    name="description"
+    content="Professional home organization with elegant systems, calm spaces, and a refined client experience."
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+    <link rel="stylesheet" href="/styles/siteplan.css" />
+   
 </head>
 <body>
-    
-    <nav>
-        <div class="container nav-container">
-            <a href="#" class="nav-logo">
-                <div class="logo-icon"><img src="/project/images/Logo.png" alt="Oraganize Logo" height="100" srcset=""></div>
-                
-            </a>
-            <div class="nav-links">
-                <a href="#services">Services</a>
-                <a href="#portfolio">Portfolio</a>
-                <a href="#contact">Contact</a>
-            </div>
-            <button class="btn-primary">Get Started</button>
-        </div>
-    </nav>
+  <header class="site-header">
+    <div class="container nav">
+      <a href="#home" class="brand">
+        <img
+          src="/project/images/logo.png"
+          alt="Organize It With Dani logo"
+          class="brand-logo"
+        />
+      </a>
 
-    
-   <section class="hero
-    
-    <div class="hero-overlay"> <img src="/project/images/kitchen.png" alt="Kitchen" srcset="">;"></section></div>
-    <div class="container hero-content">
-        <div class="hero-text-center">
-            <h1>BRINGING ORDER AND HARMONY TO YOUR SPACE</h1>
-        </div>
+      <nav class="desktop-nav">
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#process">Process</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Open menu">
+        ☰
+      </button>
     </div>
-</section>
 
-    <section class="mission-section">
-        <div class="container">
-            <div class="mission-grid">
-                <div class="mission-card">
-                    <h3>Our Mission</h3>
-                    <p>We redefine home organization with creativity, precision, and excellence. Our mission is to transform chaos into harmony, blending artistry with order.</p>
-                </div>
-                <div class="mission-card">
-                    <h3>Our Vision</h3>
-                    <p>Transform spaces into functional, stress-free environments that bring harmony and efficiency to everyday life. We empower clients with customized solutions.</p>
-                </div>
-                <div class="mission-card">
-                    <h3>Our Values</h3>
-                    <p>Creativity, precision, excellence, and personalized service. We believe every space tells a story and deserves thoughtful organization.</p>
-                </div>
+    <nav class="mobile-nav" id="mobileNav">
+      <a href="#home">Home</a>
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="#process">Process</a>
+      <a href="#testimonials">Testimonials</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <p class="eyebrow">Professional Home Organization</p>
+          <h1>Bringing order and harmony to your space.</h1>
+          <p class="hero-description">
+            Refined organization solutions designed to transform busy spaces into
+            calm, functional, and beautiful environments.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#contact" class="btn btn-primary">Request Estimate</a>
+            <a href="#services" class="btn btn-secondary">Explore Services</a>
+          </div>
+
+          <div class="hero-points">
+            <div class="point-card">
+              <strong>Elegant Systems</strong>
+              <span>Thoughtful setups for real routines.</span>
             </div>
+            <div class="point-card">
+              <strong>Functional Beauty</strong>
+              <span>Order that feels polished and natural.</span>
+            </div>
+          </div>
         </div>
+
+        <div class="hero-image-wrap">
+          <img
+            src="/project/images/restroom.webp"
+            alt="Organized bathroom shelves"
+            class="hero-image"
+          />
+        </div>
+      </div>
     </section>
 
-    <!-- SERVICES SECTION -->
-    <section class="services-section" id="services">
-        <div class="container">
-            <div class="section-header">
-                <h2>Our Services</h2>
-                <p>We transform chaotic spaces into organized, functional environments tailored to meet your needs.</p>
-            </div>
-            <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-image">
-                        <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663489059219/nPoVVDsB3Z7wESU9K73iAQ/hero-organized-kitchen-8TpE8t4fXQLVQF283T4BG9.webp" alt="Whole House">
-                    </div>
-                    <div class="service-content">
-                        <h3>Whole House</h3>
-                        <p>Comprehensive home organization, room-by-room, creating flow and systems that work for your lifestyle.</p>
-                        <a href="#" class="learn-more">Learn More →</a>
-                    </div>
-                </div>
-
-                <div class="service-card">
-                    <div class="service-image">
-                        <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663489059219/nPoVVDsB3Z7wESU9K73iAQ/organized-pantry-C9HctRdUx3fdjVWLK5BFAW.webp" alt="Pantry & Kitchen">
-                    </div>
-                    <div class="service-content">
-                        <h3>Pantry & Kitchen</h3>
-                        <p>Transform your pantry and kitchen into organized, efficient spaces with custom solutions.</p>
-                        <a href="#" class="learn-more">Learn More →</a>
-                    </div>
-                </div>
-
-                <div class="service-card">
-                    <div class="service-image">
-                        <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663489059219/nPoVVDsB3Z7wESU9K73iAQ/organized-bedroom-closet-8D4H9hYV6cET5jo8ncpj8b.webp" alt="Packing & Unpacking">
-                    </div>
-                    <div class="service-content">
-                        <h3>Packing & Unpacking</h3>
-                        <p>Seamless move-out and move-in services to make your transition smooth and stress-free.</p>
-                        <a href="#" class="learn-more">Learn More →</a>
-                    </div>
-                </div>
-
-                <div class="service-card">
-                    <div class="service-image">
-                        <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663489059219/nPoVVDsB3Z7wESU9K73iAQ/organized-living-room-aC72cM2bH4ZBa5vNwho7yo.webp" alt="Downsizing">
-                    </div>
-                    <div class="service-content">
-                        <h3>Downsizing</h3>
-                        <p>Expert guidance to transition to a smaller home with personalized organization solutions.</p>
-                        <a href="#" class="learn-more">Learn More →</a>
-                    </div>
-                </div>
-
-                <div class="service-card">
-                    <div class="service-image">
-                        <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663489059219/nPoVVDsB3Z7wESU9K73iAQ/organized-garage-Q2qRGqf2rKDm2djHQ4vffW.webp" alt="Garage Organization">
-                    </div>
-                    <div class="service-content">
-                        <h3>Garage Organization</h3>
-                        <p>Transform your garage into a clean, functional space with custom shelving and storage systems.</p>
-                        <a href="#" class="learn-more">Learn More →</a>
-                    </div>
-                </div>
-            </div>
+    <section class="section soft-bg" id="services">
+      <div class="container">
+        <div class="section-heading center-heading">
+          <p class="eyebrow">Services</p>
+          <h2>Designed to turn overwhelmed spaces into calm, usable rooms.</h2>
+          <p>
+            Whole home organization, pantry and kitchen setup, packing and
+            unpacking, downsizing, and garage organization.
+          </p>
         </div>
+
+        <div class="services-grid">
+          <article class="service-card">
+            <img
+              src="/project/images/pantry.jpg"
+              alt="Organized art supplies"
+              class="service-image"
+            />
+            <div class="service-content">
+              <h3>Pantry & Kitchen</h3>
+              <p>
+                Create clean zones, easier access, and better everyday flow.
+              </p>
+            </div>
+          </article>
+
+          <article class="service-card">
+            <img
+              src="https://lirp.cdn-website.com/6cad9f84/dms3rep/multi/opt/asdasdasd-1920w.jpeg"
+              alt="Organized linen shelves"
+              class="service-image"
+            />
+            <div class="service-content">
+              <h3>Whole Home Organization</h3>
+              <p>
+                Customized systems for closets, bathrooms, bedrooms, and shared spaces.
+              </p>
+            </div>
+          </article>
+
+          <article class="service-card">
+            <img
+              src="/project/images/hero-garage.avif"
+              alt="Organized bathroom storage closet"
+              class="service-image"
+            />
+            <div class="service-content">
+              <h3>Garage, Packing & More</h3>
+              <p>
+                A smoother setup for transitions, storage, and simplified living.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
     </section>
 
-    <!-- WHY CHOOSE US SECTION -->
-    <section class="why-section">
-        <div class="container why-content">
-            <div class="why-features">
-                <h2>Why Choose Us</h2>
-                <div class="feature-item">
-                    <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
-                        <polyline points="22 4 12 14.01 9 11.01"></polyline>
-                    </svg>
-                    <span class="feature-text">Professional expertise with meticulous attention to detail</span>
-                </div>
-                <div class="feature-item">
-                    <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
-                        <polyline points="22 4 12 14.01 9 11.01"></polyline>
-                    </svg>
-                    <span class="feature-text">Personalized solutions tailored to your unique lifestyle</span>
-                </div>
-                <div class="feature-item">
-                    <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
-                        <polyline points="22 4 12 14.01 9 11.01"></polyline>
-                    </svg>
-                    <span class="feature-text">Transformative before-and-after results</span>
-                </div>
-                <div class="feature-item">
-                    <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
-                        <polyline points="22 4 12 14.01 9 11.01"></polyline>
-                    </svg>
-                    <span class="feature-text">Stress-free process from consultation to completion</span>
-                </div>
-                <div class="feature-item">
-                    <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
-                        <polyline points="22 4 12 14.01 9 11.01"></polyline>
-                    </svg>
-                    <span class="feature-text">Commitment to quality and excellence</span>
-                </div>
-            </div>
-            <div class="why-image">
-                <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663489059219/nPoVVDsB3Z7wESU9K73iAQ/organized-living-room-aC72cM2bH4ZBa5vNwho7yo.webp" alt="Organized living room">
-            </div>
+    <section class="section" id="about">
+      <div class="container about-grid">
+        <div class="about-image-wrap">
+          <img
+            src="/project/images/professional-organizer.webp"
+            alt="Bathroom organization design"
+            class="about-image"
+          />
         </div>
+
+        <div class="about-card">
+          <p class="eyebrow">About</p>
+          <h2>Organization that supports daily life with clarity and ease.</h2>
+          <p>
+            At Organize It With Dani, the goal is to transform spaces into
+            functional, stress-free environments that bring harmony and efficiency
+            to everyday life.
+          </p>
+          <p>
+            Every project is approached with attention to detail, creativity, and
+            customized solutions that make the home feel lighter, calmer, and more
+            intentional.
+          </p>
+        </div>
+      </div>
     </section>
 
-    <!-- PORTFOLIO SECTION -->
-    <section class="portfolio-section" id="portfolio">
-        <div class="container">
-            <div class="section-header">
-                <h2>Transformations</h2>
-            </div>
-            <div class="portfolio-grid">
-                <div class="portfolio-item">
-                    <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663489059219/nPoVVDsB3Z7wESU9K73iAQ/organized-garage-Q2qRGqf2rKDm2djHQ4vffW.webp" alt="Garage transformation">
-                    <div class="portfolio-info">
-                        <h3>Garage Transformation</h3>
-                        <p>From cluttered chaos to a functional, beautifully organized space.</p>
-                    </div>
-                </div>
-                <div class="portfolio-item">
-                    <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663489059219/nPoVVDsB3Z7wESU9K73iAQ/organized-pantry-C9HctRdUx3fdjVWLK5BFAW.webp" alt="Pantry organization">
-                    <div class="portfolio-info">
-                        <h3>Pantry Organization</h3>
-                        <p>Every item labeled and in its perfect place for easy access.</p>
-                    </div>
-                </div>
-            </div>
+    <section class="section quote-section">
+      <div class="container">
+        <div class="quote-card center-quote">
+          <p class="quote-mark">“</p>
+          <p class="quote-text">
+            The place where you live is an expression of your life. It grows as
+            you grow and breathes as you breathe.
+          </p>
         </div>
+      </div>
     </section>
 
-    <!-- TESTIMONIALS SECTION -->
-    <section class="testimonials-section">
-        <div class="container">
-            <div class="section-header">
-                <h2>What Our Clients Say</h2>
-            </div>
-            <div class="testimonials-grid">
-                <div class="testimonial-card">
-                    <div class="stars">★★★★★</div>
-                    <p class="testimonial-text">"Dani transformed my entire home! Her attention to detail and creative solutions made everything feel so organized and beautiful."</p>
-                    <p class="testimonial-author">Sarah M.</p>
-                </div>
-                <div class="testimonial-card">
-                    <div class="stars">★★★★★</div>
-                    <p class="testimonial-text">"The packing and unpacking service was a lifesaver during our move. Everything was handled professionally and with care."</p>
-                    <p class="testimonial-author">James T.</p>
-                </div>
-                <div class="testimonial-card">
-                    <div class="stars">★★★★★</div>
-                    <p class="testimonial-text">"I can't believe how much better my kitchen functions now. Dani's systems are intuitive and actually work for my family."</p>
-                    <p class="testimonial-author">Maria L.</p>
-                </div>
-            </div>
+    <section class="section warm-bg" id="process">
+      <div class="container">
+        <div class="section-heading center-heading">
+          <p class="eyebrow">Process</p>
+          <h2>A simple and elevated client journey.</h2>
+          <p>
+            A clean process designed to deliver both function and peace of mind.
+          </p>
         </div>
+
+        <div class="process-grid">
+          <div class="process-card">
+            <span class="step-number">01</span>
+            <h3>Consult</h3>
+            <p>
+              Learn the space, the daily routine, and what needs to change.
+            </p>
+          </div>
+
+          <div class="process-card">
+            <span class="step-number">02</span>
+            <h3>Edit</h3>
+            <p>
+              Sort, simplify, and define what truly belongs in the space.
+            </p>
+          </div>
+
+          <div class="process-card">
+            <span class="step-number">03</span>
+            <h3>Organize</h3>
+            <p>
+              Build practical systems that are visually calm and easy to maintain.
+            </p>
+          </div>
+
+          <div class="process-card">
+            <span class="step-number">04</span>
+            <h3>Refresh</h3>
+            <p>
+              Leave the room polished, balanced, and ready for everyday use.
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <!-- CTA SECTION -->
-    <section class="cta-section">
-        <div class="container">
-            <h2>Ready to Transform Your Space?</h2>
-            <p>Let's work together to create an organized, harmonious home that brings peace and joy to your daily life.</p>
-            <button class="btn-primary">Schedule Your Free Consultation →</button>
+    <section class="section testimonials-section" id="testimonials">
+      <div class="container">
+        <div class="section-heading center-heading">
+          <p class="eyebrow">Testimonials</p>
+          <h2>Words that reflect the experience.</h2>
         </div>
+
+        <div class="testimonials-grid">
+          <article class="testimonial-card">
+            <p>
+              “Dani did an amazing job organizing my space. Everything now has a
+              place, and my home feels so much more functional and peaceful.”
+            </p>
+            <h4>Claire</h4>
+          </article>
+
+          <article class="testimonial-card">
+            <p>
+              “Professional, detail-oriented, and truly thoughtful. The results
+              made our daily routine much easier.”
+            </p>
+            <h4>John</h4>
+          </article>
+
+          <article class="testimonial-card">
+            <p>
+              “Efficient, kind, and full of great ideas for maximizing space. I
+              would absolutely use the service again.”
+            </p>
+            <h4>Ashley</h4>
+          </article>
+        </div>
+      </div>
     </section>
 
-    <!-- CONTACT SECTION -->
-    <section class="contact-section" id="contact">
-        <div class="container">
-            <div class="section-header">
-                <h2>Get in Touch</h2>
-            </div>
-            <div class="contact-grid">
-                <div class="contact-item">
-                    <div class="contact-icon">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
-                        </svg>
-                    </div>
-                    <h3>Phone</h3>
-                    <a href="tel:+13855569337">+1 (385) 556-9337</a>
-                </div>
-                <div class="contact-item">
-                    <div class="contact-icon">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <rect x="2" y="4" width="20" height="16" rx="2"></rect>
-                            <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
-                        </svg>
-                    </div>
-                    <h3>Email</h3>
-                    <a href="mailto:organizeitwithdani@gmail.com">organizeitwithdani@gmail.com</a>
-                </div>
-                <div class="contact-item">
-                    <div class="contact-icon">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
-                            <circle cx="12" cy="10" r="3"></circle>
-                        </svg>
-                    </div>
-                    <h3>Service Area</h3>
-                    <p>Available for local and remote consultations</p>
-                </div>
-            </div>
+    <section class="section contact-section" id="contact">
+      <div class="container contact-box">
+        <div class="contact-left">
+          <p class="eyebrow">Contact</p>
+          <h2>Ready to bring calm back into your home?</h2>
+          <p>
+            Reach out to request an estimate and start planning your space.
+          </p>
         </div>
+
+        <div class="contact-details">
+          <a href="tel:+13855569337">+1 (801)555-5555</a>
+          <a href="mailto:organizeitwithdani@gmail.com">organizeitwithdani@gmail.com</a>
+        </div>
+      </div>
     </section>
+  </main>
 
-    <!-- FOOTER -->
-    <footer>
-        <div class="footer-content">
-            <div class="footer-section">
-                <h4>Organize It with Dani</h4>
-                <p>Transforming spaces into organized, harmonious environments.</p>
-            </div>
-            <div class="footer-section">
-                <h4>Services</h4>
-                <ul>
-                    <li><a href="#services">Whole House</a></li>
-                    <li><a href="#services">Pantry & Kitchen</a></li>
-                    <li><a href="#services">Packing & Unpacking</a></li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h4>Company</h4>
-                <ul>
-                    <li><a href="#contact">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h4>Connect</h4>
-                <ul>
-                    <li><a href="#">Instagram</a></li>
-                    <li><a href="#">Facebook</a></li>
-                    <li><a href="#">WhatsApp</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2026 Organize It with Dani. All rights reserved.</p>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
+  <footer class="site-footer">
+    <div class="container footer-content">
+        <p>2026 <span id="year"></span> Organize It With Dani | Last Modified: <span id="lastModified"></span></p>
+    </div>
+  </footer>
+       <script src="/scripts/siteplan.js"></script>   
+  
 </body>
 </html>
