@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Willian Pechel - Organize It With Dani | Contact</title>
+  <meta
+    name="description"
+    content="Request an estimate for home organization services and save your quote request locally."
+  >
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  >
+  <link rel="stylesheet" href="/project/styles/siteplan.css"">
+  <script src="scripts/site.js" defer></script>
+</head>
+<body data-page="contact">
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container nav-bar">
+      <a class="brand" href="siteplan.html" aria-label="Organize It With Dani home page">
+        
+        <span class="brand-text">
+           <img src="/project/images/logo.png" alt="" height="80">
+          
+        </span>
+      </a>
+
+      <button class="menu-button" id="menuButton" aria-label="Open navigation" aria-expanded="false">
+        ☰
+      </button>
+
+      <nav class="main-nav" id="mainNav" aria-label="Primary">
+        <a href="siteplan.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="inner-hero">
+      <div class="container center-text">
+        <p class="eyebrow">Contact</p>
+        <h1 class="section-title">Request a quote for your project.</h1>
+        <p class="section-copy">
+         <P> "For every minute spent organizing, an hour is earned" <p>(Benjamin Franklin)</P>
+          (801) 555-5555 and the email organize@gmail.com. 
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container contact-layout">
+        <div class="contact-panel">
+          <h2 class="section-title left-text small-title">Get in touch</h2>
+          <p>Tell us a little about your space and what kind of help you need.</p>
+          <div class="contact-info">
+            <p><strong>Phone:</strong> <a href="tel:+(801) 555-5555">(801) 555-5555</a></p>
+            <p><strong>Email:</strong> <a href="mailto:organizei@gmail.com">organize@gmail.com</a></p>
+          </div>
+        </div>
+
+        <form class="quote-form" id="quoteForm" method="get" action="contact.html">
+          <div class="form-row">
+            <div class="form-field">
+              <label for="firstName">First name</label>
+              <input id="firstName" name="firstName" type="text" required autocomplete="given-name">
+            </div>
+            <div class="form-field">
+              <label for="lastName">Last name</label>
+              <input id="lastName" name="lastName" type="text" required autocomplete="family-name">
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-field">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" required autocomplete="email" placeholder="name@example.com">
+            </div>
+            <div class="form-field">
+              <label for="phone">Phone</label>
+              <input id="phone" name="phone" type="tel" required autocomplete="tel">
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-field full-width">
+              <label for="service">I'm interested in</label>
+              <select id="service" name="service" required>
+                <option value="">Select a service</option>
+                <option value="Whole House">Whole House</option>
+                <option value="Pantry and Kitchen">Pantry and Kitchen</option>
+                <option value="Packing and Unpacking">Packing and Unpacking</option>
+                <option value="Downsize">Downsize</option>
+                <option value="Garage">Garage</option>
+              </select>
+            </div>
+          </div>
+
+          <fieldset class="form-fieldset">
+            <legend>Budget</legend>
+            <label><input type="radio" name="projectSize" value="Small" required> +$300 </label>
+            <label><input type="radio" name="projectSize" value="Medium"> +$1.000</label>
+            <label><input type="radio" name="projectSize" value="Large"> +$2.000</label>
+          </fieldset>
+
+          <div class="form-row">
+            <div class="form-field full-width">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="6" required></textarea>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-field checkbox-field full-width">
+              <label>
+                
+               
+              </label>
+            </div>
+          </div>
+
+          <button class="btn btn-primary" type="submit">Save Quote Request</button>
+          <p class="form-status" id="formStatus" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+    <section class="section alt-bg">
+      <div class="container">
+        <div class="center-text">
+         
+          <h2 class="section-title">  <p>The place where you live is an expression of your life. It grows as you grow and breathes as you breathe.</p></h2>
+          <p class="section-copy">
+            Request a free quote
+          </p>
+        </div>
+        <div class="saved-requests" id="savedRequests"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+    
+         <img src="/project/images/logo.png" alt="" height="100">
+      
+      </div>
+      <div>
+        <p><strong>Pages</strong></p>
+        <p><a href="index.html">Home</a></p>
+        <p><a href="services.html">Services</a></p>
+        <p><a href="contact.html">Contact</a></p>
+      </div>
+      <div>
+        <p><strong>Contact</strong></p>
+        <p><a href="tel:+1">(801) 555-5555</a></p>
+        <p><a href="mailto:organizeitwithdani@gmail.com">organizeitwithdani@gmail.com</a></p>
+      </div>
+    </div>
+  <footer class="site-footer">
+  <div class="container center-footer">
+    <p>&copy; <span id="currentyear"></span> Organize It With Dani. All rights reserved.</p>
+    <p id="lastModified"></p>
+  </div>
+</footer>
